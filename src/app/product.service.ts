@@ -42,13 +42,6 @@ export class ProductService implements OnInit {
       },
     ];
   }
-  getSubTotal() {
-    let sum = 0;
-    this.products.forEach((element) => {
-      sum += element.price * element.quality;
-    });
-    return sum;
-  }
   RemoveProductById(productId) {
     let index = this.products.findIndex((item) => item.id === productId);
     this.products.splice(index, 1);

@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
   applyReloadProduct(){
     this.productService.LoadProduct();
     this.products = this.productService.products;
-    this.subTotal = this.productService.getSubTotal();
-    this.totalItems = this.productService.products.length;
+    this.subTotal = this.getSubTotal();
+    this.totalItems = this.products.length;
   }
 }
