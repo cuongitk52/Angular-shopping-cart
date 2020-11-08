@@ -7,8 +7,5 @@ import { Product } from '../Product.model';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  @Input() products: Product[];
-  getTotal() {
-    return this.products.length;
-  }
+  @Input() totalItems: number;
 }

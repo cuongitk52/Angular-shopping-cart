@@ -1,3 +1,5 @@
 <main>
-<app-product></app-product>
+  <app-header [totalItems]="totalItems"></app-header>
+  <app-product [products]="products" (onRemoveProduct)="applyRemoveProduct($event)" (onChangeQuality)="applyChangeProduct($event)"></app-product>
+  <app-summary [products]="products" [subTotal]="subTotal" (onReloadProduct) = "applyReloadProduct()"></app-summary>
 </main>

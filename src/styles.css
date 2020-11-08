@@ -279,6 +279,14 @@ header .count {
   padding: 0.8rem 2.8rem;
   border-radius: 1.5rem;
 }
+.shopping{
+  margin-top: 50px;
+}
+.shopping > button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2.8rem;
+  border-radius: 1rem;
+}
 
 .empty-product {
   text-align: center;
